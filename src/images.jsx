@@ -7,21 +7,24 @@ const ImageGallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
         try {
-          // Fetch images using a public-access folder path
           const response = await fetch(
-            `https://res.cloudinary.com/dux7p9r1o/image/upload/v1732041900/`
+            "https://api.cloudinary.com/v1_1/dux7p9r1o/resources/image/folder/florist-portfolio",
+            {
+              headers: {
+                Authorization: `Basic ${btoa("342954822732478:K4J0pKkfoYHTgo33uKlF0Gp5I4s")}`, // Replace with actual API Key and Secret
+              },
+            }
           );
       
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
       
-          // If JSON-like data is available, parse it; otherwise, map image URLs
           const data = await response.json();
-          const imageUrls = data.resources.map((item) =>
-            `https://res.cloudinary.com/dux7p9r1o/image/upload/${item.public_id}.${item.format}`
+          const imageUrls = data.resources.map(
+            (item) =>
+              `https://res.cloudinary.com/dux7p9r1o/image/upload/${item.public_id}.${item.format}`
           );
-      
           setImages(imageUrls);
           setLoading(false);
         } catch (error) {
@@ -29,6 +32,7 @@ const ImageGallery = () => {
           setLoading(false);
         }
       };
+      
 
     fetchImages();
   }, []);
