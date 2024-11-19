@@ -8,7 +8,7 @@ const APIimages = () => {
   
   // Use this sample image or upload your own via the Media Explorer
   const img = cld
-        .image('florist-portfolio/1_1')
+        .image('florist-portfolio/test-one')
         .format('auto') // Optimize delivery by resizing and applying auto-format and auto-quality
         .quality('auto')
         .resize(auto().gravity(autoGravity()).width(500).height(500)); // Transform the image: auto-crop to square aspect_ratio
