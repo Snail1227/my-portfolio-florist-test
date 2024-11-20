@@ -1,13 +1,13 @@
 import APIimages from './API';
 import './App.css'
-import ImageGallery from './images'
+// import ImageGallery from './images'
 
 function App() {
 
   return (
     <div>
       <h1>Florist Portfolio</h1>
-      <ImageGallery />
+      {/* <ImageGallery /> */}
       <APIimages/>
     </div>
   );
