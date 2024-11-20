@@ -7,7 +7,8 @@ const APIimages = () => {
   const imageNames = [
     'Fall_Flowers_NYC_w2amyp',
     'image_93884367-e24d-4537-b270-4ab3ec3f49a3_grande_wkcndk',
-    '167398L__04164_tweahv'
+    '167398L__04164_tweahv',
+    'prettiest-flowers-painted-tongue-flower-lead-getty-1123-00763085ad384a9b9bf1f5cc81bee390_jdvtme'
   ];
 
   const generateImageUrls = (cloudName, transformations, imageNames) => {
