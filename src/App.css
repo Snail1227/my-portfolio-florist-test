@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-image {
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hover-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
