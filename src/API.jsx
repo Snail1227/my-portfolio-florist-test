@@ -9,7 +9,6 @@ const APIimages = () => {
     'image_93884367-e24d-4537-b270-4ab3ec3f49a3_grande_wkcndk',
     '167398L__04164_tweahv',
 <<<<<<< HEAD
-    'prettiest-flowers-painted-tongue-flower-lead-getty-1123-00763085ad384a9b9bf1f5cc81bee390_jdvtme.jpg'
 =======
     'prettiest-flowers-painted-tongue-flower-lead-getty-1123-00763085ad384a9b9bf1f5cc81bee390_jdvtme'
 >>>>>>> f8ad4d44ea2b72b6b7d8c30c8ce399f0f1303c74
